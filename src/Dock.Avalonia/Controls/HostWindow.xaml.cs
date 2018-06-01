@@ -33,6 +33,9 @@ namespace Dock.Avalonia.Controls
         public HostWindow()
         {
             this.InitializeComponent();
+            var chrome = this.Find<DockToolChrome>("PART_Chrome");
+
+            //AttachGrip(chrome);
         }
 
         /// <summary>
