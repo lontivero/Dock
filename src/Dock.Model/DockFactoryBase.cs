@@ -180,6 +180,8 @@ namespace Dock.Model
             if (view.Parent is IViewsHost host)
             {
                 host.CurrentView = view;
+
+                SetFocusedView(host, view);
             }
         }
 
